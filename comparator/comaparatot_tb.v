@@ -1,5 +1,5 @@
 module comparator_tb;
-  reg a,b;
+  reg [3:0] a,b;
   wire a_grt_b,a_les_b,a_eq_b;
   
   comparator dut(a,b,a_grt_b,a_les_b,a_eq_b);
