@@ -9,7 +9,7 @@ module synchronous_updown_counter_tb;
     
   initial begin
     $monitor("time=%0t clk=%b reset=%b up=%b count=%b",$time,clk,reset,up,count);
-    $dumpfile("asynchronous_counter.vcd");
+    $dumpfile("synchronous_counter.vcd");
     $dumpvars(1);
     
     clk=0;
