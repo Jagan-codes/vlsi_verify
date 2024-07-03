@@ -1,8 +1,8 @@
-module asynchronous_updown_counter_tb;
+module synchronous_updown_counter_tb;
   reg up,clk,reset;
   wire [3:0] count;
   
-  asynchronous_updown_counter dut(up,clk,reset,count);
+  synchronous_updown_counter dut(up,clk,reset,count);
   initial begin
     forever #5 clk=~clk;
   end

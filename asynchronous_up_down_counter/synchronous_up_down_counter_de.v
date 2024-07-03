@@ -1,4 +1,4 @@
-module asynchronous_updown_counter(input up,clk,reset,output reg [3:0] count);
+module synchronous_updown_counter(input up,clk,reset,output reg [3:0] count);
   always@(posedge clk or posedge reset)
     begin
       if(reset)
